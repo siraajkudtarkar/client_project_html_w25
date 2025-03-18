@@ -137,19 +137,19 @@ img {
     margin-bottom: 2vw;
 }
 
-#navigator ul {
+#navigator ul, #navigator ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
     margin-bottom: 4vw;
 }
 
-#navigator ul li:nth-child(odd) {
+#navigator ul li:nth-child(odd), #navigator ol li:nth-child(odd) {
     grid-column: 1 / span 1;
     text-align: center;
 }
 
-#navigator ul li:nth-child(even) {
+#navigator ul li:nth-child(even), #navigator ol li:nth-child(even) {
     grid-column: 2 / span 1;
     text-align: center;
 }
