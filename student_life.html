@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Life: Basic Needs</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href = "">Skip to Main Content</a>
+        <a class="skip-link" href=#content>Skip to Main Content</a>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -16,39 +21,88 @@
                 <li class="active"><a href="student_life.html">Student Life</a></li>
             </ul>
         </nav>
+        <img src="images/studentlife.jpg" alt="The Diag at the University of Michigan on a sunny day.">
         <h1>Student Life: Basic Needs</h1>
-        <p>Striving for fair and equitable access to food and other basic resources.</p>
     </header>
-    <main>
+    <main id="content">
+        <p>Ensuring fair and equitable access to essential resources, including food, housing, healthcare, and financial assistance, is a top priority for student success. Below, you’ll find categorized resources to help you navigate challenges and stay focused on your education.</p>
         <section>
-            <h2>Basic Needs Resources by Category</h2>
-            <article>
+            <section id="navigator">
+                <h2>Basic Needs Resources by Category</h2>
+                <ul>
+                    <li><a href="#critical-incident">Critical Incident & Management</a></li>
+                    <li><a href="#finance">Financial Support</a></li>
+                    <li><a href="#food">Food Programs</a></li>
+                    <li><a href="#healthcare">Healthcare Assistance</a></li>
+                    <li><a href="#housing-transportation">Housing & Transporation</a></li>
+                    <li><a href="#more-resources">Other Resources</a></li>
+                </ul>
+            </section>
+            <article id="critical-incident">
             <img src="images/criticalincident.jpg" alt="A stressed student working on laptop with a hand on his face">
+            <div class="text-container">
             <h3><a href="https://basicneeds.studentlife.umich.edu/category/critical-incident-support-conflict-management/">Critical Incident Support & Conflict Management</a></h3>
-            <p>Support for students who are experiencing or have been impacted by a conflict or critical incident.</p>
+            <p>Unexpected incidents and conflicts can create emotional, financial, and academic stress. Whether you're facing a crisis, dealing with personal conflicts, or seeking mediation, U-M offers confidential support and resources to help you navigate challenging situations.</p>
+            <ul>
+                <li>Emergency financial assistance for unexpected crises</li>
+                <li>Conflict resolution and mediation services</li>
+                <li>Mental health support for crisis management</li>
+            </ul>
+            </div>
             </article>
-            <article>
+            <article id="finance">
             <img src="images/finance.jpg" alt="A person's hands handling cash">
+            <div class="text-container">
             <h3><a href="https://basicneeds.studentlife.umich.edu/category/finance/">Finance</a></h3>
-            <p>Financial resources to help with immediate and long-term needs, such as emergencies, college funding and employment.</p>
+            <p>Financial stability is essential for student well-being. U-M offers resources to help you manage tuition, living expenses, and unexpected financial hardships.</p>
+            <ul>
+                <li>Emergency aid and short-term loans</li>
+                <li>Financial counseling and budgeting resources</li>
+                <li>On-campus and community employment opportunities</li>
+            </ul>
+            </div>
             </article>
-            <article>
+            <article id="food">
             <img src="images/food.jpg" alt="A person cooking food in a pan with a spatula">
+            <div class="text-container">
             <h3><a href="https://basicneeds.studentlife.umich.edu/category/food/">Food</a></h3>
-            <p>Services to help students maintain healthy habits, find access to food, and seek assistance when struggling to buy food.</p>
+            <p>Access to nutritious food is crucial for your academic success. If you’re facing food insecurity, there are several resources available to help you.</p>
+            <ul>
+                <li>Maize & Blue Cupboard - Provides free groceries and personal care items for students.</li>
+                <li>Free & Low-Cost Meal Programs - Local organizations and campus initiatives offer affordable meal options.</li>
+                <li>Grocery Shopping Assistance - Resources for students without transportation.</li>
+            </ul>
+            </div>
             </article>
-            <article>
+            <article id="healthcare">
             <img src="images/healthcare.jpg" alt="A stethoscope on a table">
+            <div class="text-container">
             <h3><a href="https://basicneeds.studentlife.umich.edu/category/health-care/">Health Care</a></h3>
-            <p>Support for students seeking medical, dental or mental health treatment, including resources for securing health insurance and finding care providers.</p>
+            <p>Your physical and mental well-being are key to your success. U-M provides comprehensive healthcare options, including primary care, mental health counseling, and wellness programs.</p>
+            <ul>
+                <li>UHS (University Health Services) for routine checkups and urgent care</li>
+                <li>CAPS (Counseling and Psychological Services) for mental health support</li>
+                <li>Assistance with securing health insurance</li>
+            </ul>
+            </div>
             </article>
-            <article>
+            <article id="housing-transportation">
             <img src="images/housingtransportation.jpg" alt="A passing bus with students waiting at a bus stop at the Central Campus Transit Center">
+            <div class="text-container">
             <h3><a href="https://basicneeds.studentlife.umich.edu/category/housing-transportation/">Housing & Transportation</a></h3>
-            <p>Campus and community resources for securing housing, accessing transportation, and seeking assistance for a variety of housing needs.</p>
+            <p>Whether you need help finding housing, navigating transportation options, or dealing with unexpected housing concerns, U-M offers resources to support your needs.</p>
+            <ul>
+                <li>Off-Campus Housing Search - Find apartments and housing options near campus.</li>
+                <li>University Housing Assistance - Support for students in need of temporary or emergency housing.</li>
+                <li>Transportation Services - Free bus and ride-sharing services for students.</li>
+            </ul>
+            </div>
             </article>
-            <article>
+            <article id="more-resources">
+            <div class="text-container">
             <h3><a href="https://basicneeds.studentlife.umich.edu/resources">More Resources</a></h3>
+            <p>For a full list of available student support services, visit the U-M Basic Needs website for additional information on financial aid, emergency grants, food assistance, and more.</p>
+            </div>
             </article>
         </section>
     </main>

@@ -1,0 +1,270 @@
+/* default styles for mobile view */
+
+/* UMICH BRAND COLORS
+black: #131516
+maize: #FFCB05
+blue: #00274C */
+
+/* Mobile/Tablet: 320-768px */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #00274C;
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: #00274C;
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+}
+
+body, html {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #131516;
+}
+
+body img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+body > header > img {
+    width: auto;
+    height: auto;
+    max-width: 35%;
+    margin: 0;
+    grid-column: 1 / span 1;
+    align-self: start;
+    justify-content: end;
+}
+
+header {
+    background-color: #00274C;
+    color: #FFFFFF;
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+header img {
+    text-align: left;
+}
+
+header h1 {
+    font-size: 4vw;
+    align-content: center;
+    align-items: start;
+    grid-column: 2 / span 1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #FFCB05;
+    grid-column: 1 / span 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+nav li {
+    margin: 0;
+    border-right: 1px solid #00274C;
+    text-align: center;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a {
+    color: #00274C;
+    padding: 2vw;
+    text-decoration: none;
+}
+
+nav .active a {
+    color: #131516;
+    text-underline-offset: 5px;
+    text-decoration: underline double #131516;
+}
+
+nav a:hover {
+    color: #131516;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    /* flex-wrap: wrap; */
+}
+
+.content {
+    padding: 20px;
+}
+
+#navigator h2, p {
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+#navigator ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    margin-bottom: 4vw;
+}
+
+#navigator ul li:nth-child(odd) {
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+
+#navigator ul li:nth-child(even) {
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+#academic-resources h2 {
+    text-align: center;
+}
+
+#physical-health,
+#mental-health,
+#life-outside-classroom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+    text-align: center;
+}
+
+#physical-health h2,
+#physical-health p,
+#mental-health h2,
+#mental-health p,
+#life-outside-classroom h2,
+#life-outside-classroom p {
+    grid-column: 1 / span 2;
+    text-align: center;
+    margin: 1vw;
+}
+
+#life-outside-classroom ul {
+    display: grid;
+    grid-column: 1 / span 2;
+    list-style: none;
+}
+
+#life-outside-classroom ul li:nth-child(odd) {
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+
+
+#life-outside-classroom ul li:nth-child(even) {
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+#life-outside-classroom ul li:nth-last-child(1) {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+#critical-incident, #finance, #food, #healthcare, #housing-transportation, #more-resources {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: auto;
+}
+
+#critical-incident img,
+#finance img,
+#food img,
+#healthcare img,
+#housing-transportation img,
+#more-resources img {
+    grid-column: 1 / span 1;
+    width: auto;
+    justify-self: center;
+    align-self: start;
+}
+
+#critical-incident .text-container,
+#finance .text-container,
+#food .text-container,
+#healthcare .text-container,
+#housing-transportation .text-container,
+#more-resources .text-container {
+    grid-column: 2 / span 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#critical-incident h3,
+#finance h3,
+#food h3,
+#healthcare h3,
+#housing-transportation h3,
+#more-resources h3 {
+    margin: 0;
+}
+
+#critical-incident p,
+#finance p,
+#food p,
+#healthcare p,
+#housing-transportation p,
+#more-resources p {
+    margin-bottom: 1vw;
+}
+
+#critical-incident ul,
+#finance ul,
+#food ul,
+#healthcare ul,
+#housing-transportation ul,
+#more-resources ul {
+    padding-left: 1vw;
+    margin: 1vw 0 5vw 0;
+}
+
+footer {
+    background-color: #FFCB05;
+    color: #00274C;
+    text-align: center;
+    padding: 2vw;
+    width: auto;
+}
